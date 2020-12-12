@@ -1,0 +1,220 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-family: HandmadeBrushes;
+	src:url(HandmadeBrushes.ttf) ;
+}
+
+@font-face {
+	font-family: AniTypewriter;
+	src:url(AniTypewriter.ttf) ;
+}
+
+@font-face {
+	font-family: Roboto;
+	src:url(Roboto-Light.ttf) ;
+}
+
+
+body {
+
+	background: #F4F4FA;
+}
+
+header {
+	background: #edd0c8;
+	color: #fff;
+	text-align: center;
+	padding: 50px 0;
+	height:90px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+header .titulo {
+	font-family: 'HandmadeBrushes';
+	font-size: 500%;
+	font-weight: 350;
+}
+
+main {
+	margin-top: 270px;
+}
+
+main .contenedor {
+	width: 200%;
+	height: 300px;
+	max-width: 1000px;
+	margin: auto;
+}
+/*Fondo del menú*/
+#menu{
+	background-color: #cf8c86;
+
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+			}
+
+#menu ul li {
+	display: inline-block;
+}
+
+#menu ul li a {
+	color: white;
+	display: block;
+	padding: 10px 50px;
+	text-decoration: none;
+	
+}
+
+
+/*Fondo cuando pasas el cursor por la barra*/
+#menu ul li a:hover{ 
+	background-color:  #e0c7c2;
+
+}
+
+/* ------------------------- */
+/* Estilos CSS del la barra rrss */
+/* ------------------------- */
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%; 
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-pinterest {
+	background: #E83028;
+}
+
+.icon-instagram {
+	background: #3F60A5;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+
+/* ------------------------- */
+/* Estilos CSS del Reproductor */
+/* ------------------------- */
+.lau-video {
+	width: 100%;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,.5);
+}
+
+.lau-video .vjs-control-bar {
+	background: #F4F4F4;
+	color: #2d5f85;
+}
+
+.lau-video.vjs-play-progress,
+.lau-video .vjs-volume-level {
+	background: #1d87d8;
+}
+
+.lau-video .vjs-slider {
+	background: #2d5f85;
+}
+
+.video-js:hover .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+}
+
+.lau-video .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 100%;
+	border:none;
+}
+
+.lau-video .vjs-big-play-button:hover {
+	background: rgba(0,0,0,.5);
+}
+
+
+/* Para el titulo Simulador de Reproductor de video */
+article {
+	margin: 50px 0;
+	background: #fff;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Roboto';
+	line-height: 32px;
+	padding: 50px;
+}
+
+/* Este es para la descripción del video o de la página */
+article h2 {
+	color: #2D5F85;
+	font-size: 22px;
+	font-family: 'AniTypewriter';
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.content-footer {
+	margin: 40px 0;
+	padding: 10px 0;
+	text-align: center;
+	background-color:#edd0c8;
+	text-decoration: none;
+  }
+
+  .content-footer > img {
+	vertical-align: text-top;
+	
+   }
+
+@media screen and (max-width: 600px) {
+	header {
+		position: relative;
+		height: auto;
+	}
+
+	main {
+		margin-top: 50px;
+	}
+}

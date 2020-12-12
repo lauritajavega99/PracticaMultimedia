@@ -1,0 +1,184 @@
+
+.container video
+{
+  position: relative;
+  max-width: 700px;
+  height: 400px;
+  margin: 0 auto;
+    position: ce;
+    bottom: 0;
+    left: 0;
+    z-index: 1 !important;
+}
+.container .overlay
+{
+    position: absolute;
+    top: 30;
+    left: 20px;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    align-items: center;
+   
+
+}
+#ov2 {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: -195px;
+  width: 40%;
+  height: 110.233px;
+  color: black;
+  margin-left: 355px;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-right-width: 5px;
+  border-right-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+#ov1 {
+	background-color: white;
+	border-radius: 15px;
+	color: black;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-right-width: 5px;
+	border-right-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	height: 120.6167px;
+	width: 20%;
+  margin-top: -400px;
+  margin-left: 300px;
+}
+
+
+#ov0 {
+	background-color: white;
+	border-radius: 10px;
+	padding-left: 15px;
+	padding-bottom: 100px;
+	height: 100.233px;
+	width: 40%;
+	padding-right: 15px;
+	margin-left: 350px;
+	margin-top: -340px;
+	color: black;
+	border-width: 5px 5px 5px 4px;
+	border-style: solid;
+}
+
+#ov3 {
+	background-color: white;
+	border-radius: 10px;
+	height: 110px;
+  width: 30%;
+  color: black;
+	margin-top: -180px;
+  margin-left: 430px;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-right-width: 5px;
+  border-right-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+
+#input{
+  display: block;
+}
+
+.boton {
+  float: right;
+}
+
+#button {
+  background: green;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  margin-top: 15px;
+  
+}
+
+#after_submit{
+  visibility: hidden;
+  background: #0000ff;
+  border-radius: 20px;
+  float: left;
+  font-size: 25px;
+}
+
+.container .overlay h3
+{
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.button:hover{
+        color: #333;
+        border-color: #888;
+        outline: 0;
+}
+
+h4{
+      margin-bottom: 0px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+    #quiz{
+      background:#fff;
+      max-width:780px;
+      margin:100px auto;
+      padding:10px 20px;
+      padding-bottom:20px;
+      border-radius:5px;
+      box-shadow :2px 2px 5em #222;
+    }
+    
+    h1{
+      font-family: 'Raleway', sans-serif;
+    }
+    .question{
+      font-size:1.75em;
+    }
+    input[type=checkbox]{
+      margin-left:2%;
+      margin-bottom:5px;
+      margin-right:10px;
+    }
+    
+    label{
+      color:#a9a9a9; 
+      font-size:1.2em;
+      margin-left:2%;
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+    
+    span{
+      float: right;
+      font-weight: bolder;
+      color: #222;
+      font-family: 'Inconsolata', sans-serif;
+    }
+    
+    .group:after{
+      display:table;
+      content:"";
+      clear:both;
+    }
