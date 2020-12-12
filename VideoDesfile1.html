@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="css/video-js.css"> <!-- enlace a la libreria de JS de la carpeta -->
+	<!--este es el código al cual tiene que acceder -->
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos - copia.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/font.css.css">
+	<link rel="stylesheet" href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css">
+	<link rel="stylesheet" href="css/Interactivos/videoDesfile.css">
+	<link rel="stylesheet" href="css/styleV.css">
+	<script src="prueba/jquery.min.js"></script>
+	<link rel="icon" type="image/png" href="images/logoL1.png" sizes="32x32">
+
+	<title>LM Video</title>
+</head>
+
+<body>
+	<header>
+		<!--Es el título con el fondo rosa-->
+		<!--<h1 class="titulo">LAU VideoPlayer</h1>-->
+		<h1 class="titulo">Proyecto Multimedia</h1>
+		<div id="menu">
+			<ul style="padding-bottom: 12px;padding-top: 12px;">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Aboutme.html">Sobre el proyecto</a></li>
+
+			</ul>
+		</div>
+	</header>
+
+	<div class="social-bar">
+		<a href="" class="icon icon-facebook" target="_blank"></a>
+		<a href="" class="icon icon-twitter" target="_blank"></a>
+		<a href="" class="icon icon-pinterest" target="_blank"></a>
+		<a href="" class="icon icon-instagram" target="_blank"></a>
+	</div>
+
+	<main class="site-content" style="border-top-style: solid; border-top-width:0px; margin-top:190px">
+		<figure id="video_player1">
+			<div class="container">
+				<video id="myVideo" width=800 poster="videos/desfile.jpg" controls>
+					<source src="videos/desfile.mp4" type="video/mp4">
+				</video>
+
+				<p style="display:none;">Playback position: <span id="demo"></span></p>
+
+				<div class="overlay" id="ov1">
+					<h4 style="margin-top: 15px;">¿Sabías que...?</h4>
+					<p style="font-size: 14px;margin-top: 6px;">Versace fue el primero que utilizó la tecnología láser para crear ropa con materiales inusuales
+						como
+						cuero, goma y malla metálica.</p>
+				</div>
+
+				<div class="overlay" id="ov2">
+					<h4 style="margin-top: 18px;">¿Eres más de colores negros o estampados?</h4>
+					<br>
+					<a href="#" class="button longBtns goodChoice">¡Tonos negros!</a>
+					<a href="#" class="button longBtns badChoice">¡Mejor estampados!</a>
+				</div>
+
+				<div class="overlay" id="ov0">
+					<h4 style="margin-top: 15px;">Acerca del Diseñador: Gianni Versace.</h4>
+					<p class="textOv1" style="text-align:justify"> <br> <img class="Versace" src="images/versace.JPG"
+							alt="versace" width="120" height="100" align="right">Gianni Versace fue un diseñador de
+						origen italiano conocido por sus diseños exóticos y su estilo de vida glamoroso.
+						Desde pequeño, se vio inmerso en el mundo de la moda,
+						pues su madre tenía un taller de costura en el que él trabajó durante algún tiempo.
+
+					</p>
+
+				</div>
+
+				<form class="overlay" id="ov3" name="ov3">
+					<span class="boton" onclick="cerraranuncio('ov3')">x</span>
+					<h4 style="margin-top: 18px;">¿Cuál es el nombre completo del diseñador?</h4>
+					<input id="textbox" type="text" name="question1" >
+
+					
+					<input id="button" type="button" value="Comprobar" onclick= "check()"> <br>
+
+					<div id="after_submit"></div>
+					<p id="messages"></p>
+				</form>
+			</div>
+			<br>
+			<div class="center">
+				<figcaption>
+					<h1 class="separador">Videos no interactivos</h1>
+
+					<a href="video/avion.mp4"><img src="images/avion.JPG" width=198> </a>
+					<a href="video/cafe.mp4"><img src="images/cafe.JPG" width=198> </a>
+					<a href="video/mesa.mp4"><img src="images/mesa.JPG" width=198></a>
+					<a href="video/moto.mp4"><img src="images/moto.JPG" width=198></a>
+					<a href="video/bailarina.mp4"><img src="images/bailarina.JPG" width=198> </a>
+					<a href="video/keyboard.mp4"><img src="images/keyboard.JPG" width=198> </a>
+					<a href="video/Noria.mp4"><img src="images/noria.JPG" width=198></a>
+					<a href="video/video1.mp4"><img src="images/portatil.JPG" width=198></a>
+				</figcaption>
+		</figure>
+		<figcaption>
+			<h1 class="separador">Videos interactivos</h1>
+			<a href="VideoCafe1.html"><img src="images/cafe1.jpg" width=198> </a>
+			<a href="VideoBrownie1.html"><img src="images/brownie.jpg" width=198> </a>
+			<a href="VideoDesfile1.html"><img src="images/desfile.JPG" width=198></a>
+			<a href="VideoBaile.html"><img src="images/dance.jpg" width=198 style="height: 108.033px;"></a>
+
+		</figcaption>
+
+	</main>
+
+
+</body>
+<footer class="content-footer">
+	<p class="sobreMi"> © Laura Muñoz Jávega | 2020 </p>
+	<a href="https://esi.uclm.es"><img class="logoESI" src="images/logoESI.png" width="80" height="50"></a>
+	&nbsp; &nbsp; &nbsp;
+
+	<a href="https://www.uclm.es"><img class="logoUCLM" src="images/logoUCLM.png" width="50" height="50"></a>
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"
+	integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+<script src="js/funcionalidad.js"></script>
+<script src="js/Interactivos/videoDesfile.js"></script>
+
+</html>
